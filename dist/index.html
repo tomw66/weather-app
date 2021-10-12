@@ -2,9 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Getting Started</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
   </head>
   <body>
+      <form>
+          <input type="text" id = "city" placeholder="City"><br><br>
+          <input type="radio" id="metric" class="radio" name="unit" value="metric" checked>
+          <label for="metric">Celsius</label>
+          <input type="radio" id="imperial" class="radio" name="unit" value="imperial">
+          <label for="imperial">Fahrenheit</label><br><br>
+          <button>Search</button>
+      </form>
    <script src="main.js"></script>
   </body>
 </html>
