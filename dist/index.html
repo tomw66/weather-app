@@ -3,25 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <title>Weather App</title>
+    <title>Tom's Weather App</title>
   </head>
   <body>
+    <div id="container">
       <form>
-          <input type="text" id = "city" placeholder="City"><br><br>
+          <input type="text" id = "city" placeholder="City">
+          <span id="errorMessage"></span><br><br>
           <input type="radio" id="metric" class="radio" name="unit" value="metric" checked>
-          <label for="metric">Celsius</label>
+          <label for="metric">Metric</label>
           <input type="radio" id="imperial" class="radio" name="unit" value="imperial">
-          <label for="imperial">Fahrenheit</label><br><br>
+          <label for="imperial">Imperial</label><br><br>
           <button>Search</button>
       </form>
-      <div id="card">
-        <h1 id="location"></h1>
-        <h2 id="forecast"></h2>
-        <p id="temperature"></p>
-        <p id="feelsLike"></p>
-        <p id="humidity"></p>
-        <p id="wind"></p>
-      </div>
+
+    </div>
    <script src="main.js"></script>
   </body>
 </html>
